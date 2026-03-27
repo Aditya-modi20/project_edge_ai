@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="387dp"
+        android:layout_height="512dp"
+        android:id="@+id/preview_view">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="496dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop" />
+        </androidx.camera.view.PreviewView>
+
+
+    </androidx.camera.view.PreviewView>
+
+
+    <!-- Button Container -->
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="Results will be displayed here!"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Switch Camera Button -->
+
+
+
+        <Button
+            android:id="@+id/Capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Capture"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="9dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:text="Gallery" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
