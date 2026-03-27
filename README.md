@@ -1,6 +1,10 @@
 # Project_edge_ai
 The main task of this project is to build an android application that can predict a person age, gender and emotion from the input face image. 
 
+## Methodology 
+Three different models are trained to predict age, gender and emotion of a person from the input image. 
+The gender and emotion model are trained on sequential model and the age model is trained on Resnet-50 due to its complexity. 
+
 ## Dataset used 
 - Age dataset **[link](https://www.kaggle.com/datasets/himanshuydv11/facial-emotion-dataset)**
 - Gender dataset **[link](https://www.kaggle.com/datasets/maciejgronczynski/biggest-genderface-recognition-dataset)**
